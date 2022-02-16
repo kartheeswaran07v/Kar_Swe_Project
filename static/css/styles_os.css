@@ -1,0 +1,46 @@
+.col {
+  text-align: center;
+  margin: 10px;
+}
+
+.img {
+  width: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+  padding-top: 50px;
+  background-image: linear-gradient(to top right, #191919, #ECDBBA, #C84B31);
+}
+
+
+.year {
+  padding: 10px;
+  width: 280px;
+  margin-left: 63px;
+  text-shadow: 1px 1px #30475E ;
+  color: #886F6F;
+  background-color: #F5EEDC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 50px;
+}
+
+
+a {
+  color: #c02537 !important;
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-family: 'Caveat', cursive;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  padding: 10px 63px;
+}
+
+a:hover {
+  color: black;
+}

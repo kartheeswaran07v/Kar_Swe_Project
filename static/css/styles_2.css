@@ -1,0 +1,181 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: blue;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing:border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    font-size: 6rem;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+    font-family: 'Caveat', cursive;
+}
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url("https://lh3.googleusercontent.com/FlBf0ICCXZ5hSKkPz0h1IlxH_o8GFH27o4POMhySd2QIn3UbEweXt7Y6Ord1oWXMbGPIpETS_6E0wjXW3g4FYVdjkdTOUut4w49tbCsxRj7dtEP2IfvW_uu55dm2xcDGUuqXgHy5ZNzasYuMWEc2Kc0wpMSlEhPt4XVZqS4QjtpLcAzhC2H4aazQZxMTy9b9HKTKxViylsUkuUju7dk5KUkbtIO7XVIVSkk-3DBwHptlpxpE9oo83TKK-Txo8fZhzvl3L0BPtFR73xfcUccJnbmtcVkABwdx9DZYDUQQ6uLN6gdV0LEJg03BK6CFbBBYGJx1UdmD48AETv8VTSxalYIZ4JnV4T4mChcewTU5nqPCTY5XN_STcHAuhqbfxs98H7ltZ-2JR4z_3AvR8zPiNtAAubE-RTHHfuhlZRpJdQXvSo-0aWZkODNsUtB07Id-9AzVRGywVjHlmmh9NnX1P6kFnTvkv0lG3L9ShoKlEfYqCgWMHFB5JXwFEuIqbKAoa1PX2thXznXuxiWgsoQ6bdXTt5qTExG_wqjiRPWc9J98hUMPqRo4cRrtv6bWP9b7N-kcA45uRAuPxSycLO_L0HwDK16Osbe65VG67M5BXmrfqMux35aaQFFmYSnhIh_IYUpSNELsgP5nOtHGMEw2PHIPephHRecuIUEkdgIEEYiCcoWgrA6o5f-nxyo1K9ZC2mfIUjWznlQizdvid_10bRFD=w1348-h620-no?authuser=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.container {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background-image: linear-gradient(20deg, white, #2B2B2B);
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: white;
+}
+
+
+/* for Json response and 24 stories */
+
+.container-fluid {
+  padding: 50px;
+}
+
+.skill-row {
+  width: 75%;
+  margin: 50px auto 50px auto;
+  text-align: left;
+  line-height: 2;
+  color: #2D2424;
+}
+
+.skill-image {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  padding-bottom: 20px;
+}
+
+.skill-image2 {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+
+.button{
+  float: right;
+  margin-right: 157px;
+}
+
+hr {
+height: 1px;
+border-style: solid;
+border-color: #2C3333;
+width: 100%;
+margin: 0px;
+color: white;
+}
+
+hr.style-one {
+border: 0;
+height: 1px;
+background: #333;
+background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.note1, .note2 {
+  position: absolute;
+  z-index: -1;
+  width: 690px;
+  height: 230px;
+
+}
+
+.note1 {
+  margin-left: 265px;
+  width: 690px;
+}
+
+h3, p {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  line-height: normal;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: auto 3px auto;
+}
+
+h3 {
+  color: black;
+  font-size: 1.4rem;
+  padding-top: 20px;
+}
+
+/* for grayscale */
+
+/* img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+} */
+
+.realistic-marker-highlight {
+  position:relative;
+}
+.realistic-marker-highlight:before {
+  content:"";
+  background-color:#FFBC80;
+  width:100%;
+  height:1em;
+  position:absolute;
+  z-index:-1;
+  filter:url(#marker-shape);
+  left:-0.25em;
+  top:0.1em;
+  padding:0 0.25em;
+}

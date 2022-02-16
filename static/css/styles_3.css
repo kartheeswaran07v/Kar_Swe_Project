@@ -1,0 +1,98 @@
+.col-lg-6 {
+  height: 620px;
+  font-family: 'Caveat', cursive;
+}
+
+body {
+  background-image: linear-gradient( to right, #FFBBBB, white, #00B4D8);
+}
+
+
+
+/* text */
+
+.happy, .bday {
+  font-size: 5rem;
+}
+
+.happy, .bday, .th {
+  margin: 0px;
+  padding: 0px;
+  /* position: absolute; */
+  text-align: center;
+  line-height: 0.9;
+}
+
+.happy {
+  padding-top: 110px;
+}
+
+.th {
+  font-size: 10rem;
+}
+
+.wish-text{
+  z-index: 2;
+}
+
+.row {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* container 1 bg */
+.wish {
+  width: 550px;
+  height: 550px;
+  background-image: url("https://i.pinimg.com/originals/87/d9/79/87d979dbbba4f7c69f86d9cbf6474466.jpg");
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 10px;
+  z-index: -1;
+  margin: 50px;
+}
+
+
+/* container 2  */
+.gift-pic {
+  width: 550px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-top: 45px;
+  border-radius: 20px;
+}
+
+
+
+
+
+/* The animation code */
+@keyframes example {
+  0%   {background-color: #CAF0F8;}
+  50%  {background-color: #FFBBBB;}
+  100% {background-color: #CAF0F8;}
+}
+
+.arrow, .arrow1, .arrow2 {
+  position: absolute;
+  width: 172px;
+  height: 2.5px;
+  margin-left: 525px;
+  background-color: #03045E;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.arrow {
+  margin-top: 310px;
+}
+
+.arrow1 {
+  margin-top: 350px;
+}
+
+.arrow2 {
+  margin-top: 330px;
+}

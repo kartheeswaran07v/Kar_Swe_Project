@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Parallax Effect | Pure CSS</title>
+        <link rel="stylesheet" href="static/css/styles_2.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <section>
+                {% for content in contents: %}
+                <div class="container-fluid2" id="list">
+                    {% if content.id%2 == 1: %}
+                      <div class="skill-row">
+                        <img src="https://media.istockphoto.com/videos/paper-background-stop-motion-animation-crumpled-lined-school-pad-4k-video-id954972470?s=640x640" class="note1" >
+                        <img class="skill-image" src="static/images/image_{{ content.id }}.jpg" alt="chillies">
+                        <h3><span class="realistic-marker-highlight">{{ content.title }}</span></h3>
+                        <p>{{ content.content }}</p>
+                      </div>
+                      <hr class="style-one" />
+                    {% else: %}
+                      <div class="skill-row">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTleQ2awRgphQc_NW0Ppt75xZmKtRDUNaU-Fg&usqp=CAU" class="note2" >
+                        <img class="skill-image2" src="static/images/image_{{ content.id }}.jpg" alt="profile Pic">
+                        <h3>{{ content.title }}</h3>
+                        <p>{{ content.content }}</p>
+                      </div>
+                      <hr class="style-one" />
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </section>
+        </div>
+        <header>
+            <h1>Kar&Swe</h1>
+        </header>
+    </body>
+</html>
