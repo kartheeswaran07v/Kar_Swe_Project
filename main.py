@@ -39,7 +39,7 @@ def home():
 
 @app.route('/pics/<number>')
 def pics(number):
-    return render_template("picture.html", number=number)
+    return render_template("picture.html", number=int(number))
 
 
 @app.route('/24')

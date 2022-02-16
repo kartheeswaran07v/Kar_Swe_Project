@@ -17,3 +17,7 @@ a:link {
   color: black !important;
   text-decoration: none;
 }
+
+a:visited {
+  color: black !important;
+}
