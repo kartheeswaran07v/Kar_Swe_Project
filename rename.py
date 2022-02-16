@@ -1,6 +1,6 @@
 import os
 
-folder = r'C:\Users\karth\Downloads\Photos\24 pics\\'
+folder = r'C:\Users\karth\Downloads\gifts\\'
 count = 1
 # count increase by 1 in each iteration
 # iterate all files from a directory
@@ -9,7 +9,7 @@ for file_name in os.listdir(folder):
     source = folder + file_name
 
     # Adding the count to the new file name and extension
-    destination = folder + "text_" + str(count) + ".jpg"
+    destination = folder + str(count) + ".webp"
 
     # Renaming the file
     os.rename(source, destination)

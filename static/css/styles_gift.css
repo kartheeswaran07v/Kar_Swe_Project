@@ -1,0 +1,19 @@
+.col-4 {
+  height: 300px;
+  padding-top: 100px;
+}
+
+.row p {
+  font-size: 7rem;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+}
+
+img {
+  width: 25%;
+}
+
+a:link {
+  color: black !important;
+  text-decoration: none;
+}
